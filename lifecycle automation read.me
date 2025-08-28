@@ -1,0 +1,25 @@
+# 🔄 Identity Lifecycle Automation
+
+This project automates **user onboarding and offboarding** from HR data into Okta/Azure AD.  
+It simulates a real IAM engineer workflow — integrating HR → IAM → target apps.
+
+## 🚀 Features
+- Import users from CSV (`users.csv`)  
+- Provision new accounts into Okta/Azure AD  
+- Assign groups/roles based on department/job title  
+- Offboard (disable & remove access) when users leave  
+- Generate audit log (`audit_log.csv`)  
+
+## 📂 Files
+- `onboard.py` → Creates users & assigns groups  
+- `offboard.py` → Disables/deletes users  
+- `audit.py` → Generates compliance log  
+- `requirements.txt` → Dependencies  
+- `users.csv` → Sample HR data  
+
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+python onboard.py
+python offboard.py
+
