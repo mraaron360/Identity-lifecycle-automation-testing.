@@ -1,0 +1,4 @@
+Description:
+Automates onboarding/offboarding into Okta or Microsoft Entra ID from HR data (CSV/API).
+Topics:
+iam, lifecycle, okta, entra, azure-ad, automation, python, onboarding, offboarding
